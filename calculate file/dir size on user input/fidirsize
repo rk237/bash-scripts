@@ -1,0 +1,14 @@
+#!/bin/bash
+#author : Rahul Singh
+#version : v1
+#description: This script checks and print the size of files and directory in given path
+
+echo "Enter the file/directory name/path: "
+read name
+if [ -d "$name" ];then
+        echo "$name is a directory"
+        echo "The dir size is `du -sh $name`"
+else
+        echo "$name is a file"
+        echo "The file size is `du -sh $name`"
+fi

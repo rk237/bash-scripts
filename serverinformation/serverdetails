@@ -1,0 +1,18 @@
+#!/bin/bash
+#author : Rahul Singh
+#date : 28-01-25
+#description : This script will return the information related to server
+
+echo "uptime: "
+uptime
+echo "hostname is : "
+hostname
+echo
+echo "Free memory : "
+free -m
+echo
+echo "Print size of all directories in home directory: "
+du -sh * /home/rahul | sort -hr
+echo
+echo "Print disk space: "
+df -h | grep -v tmpfs

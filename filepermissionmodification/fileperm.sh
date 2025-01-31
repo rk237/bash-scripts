@@ -4,6 +4,8 @@
 #description : This script creates a file on user input and modifies permission on user input
 #we can make changes into the script based on our requirement, we can also amend permission of existsing file inplace of creating a new one
 echo "Please enter filename to be created:"
+#comment to amend filepermission of existing file
+#echo "Please enter filename to be modified:"
 read filename
 touch $filename
 #display file permissions

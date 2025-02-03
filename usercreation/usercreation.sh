@@ -15,7 +15,7 @@ echo "Enter username: "
 read username
 
 #checking if user already exists or not
-grep - q $username /etc/passwd
+grep -q $username /etc/passwd
 if [ $? -eq 0 ];
 then
         echo "Error --user $username already exists"
